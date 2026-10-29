@@ -57,6 +57,8 @@ dsh plugin --profile desktop add https://github.com/shutongX/dsh-perf
 - 其他优化：聊天滚动优化、降特效、轮询降频、自定义 CSS / JS。
 - 开销阈值可以调（默认：记录 ≥20ms 或加载 ≥4ms）。
 
+> 额外优化点：新版 DSH 已默认修复 ui-chat 滚动性能问题，通常不需要再开实验项「聊天滚动优化」；报告里也会单独列出这一条。
+
 ### 报告
 
 选一条记录 →「生成 Markdown 报告」。报告会写到 `$DSH_HOME/storages/dsh-perf/reports/`，内容包括：

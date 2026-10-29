@@ -36,6 +36,8 @@ test('buildReport recommends a third-party high-cost, low-usage plugin', () => {
   assert.ok(report.json.recommendedLazy.includes('dsh-pocket-switch'));
   assert.match(report.markdown, /# DSH 性能报告/);
   assert.match(report.markdown, /recommended_lazy/);
+  assert.match(report.markdown, /已知优化点/);
+  assert.match(report.markdown, /已默认修复 ui-chat/);
 });
 
 test('buildReport never recommends the suite itself or built-in plugins', () => {
