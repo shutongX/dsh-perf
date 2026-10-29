@@ -1,0 +1,4 @@
+# dsh bundle patch: inserts the merged performance suite host entry.
+- insert:
+    - id: dsh-perf
+      name: 'dsh-perf'

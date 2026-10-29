@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Performance Suite",
+    "description": "Measure per-plugin client cost, compare runs, and generate agent-readable optimization reports."
+  }
+}

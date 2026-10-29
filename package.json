@@ -1,0 +1,62 @@
+{
+  "name": "dsh-perf",
+  "version": "0.1.0",
+  "description": "Performance suite for DeepSeek Harness: measure per-plugin client cost, save and compare runs, generate agent-readable optimization reports, and tune plugins with quadrant recommendations.",
+  "private": false,
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json",
+    "./icon": "./icon.svg",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "icon.svg",
+    "locale"
+  ],
+  "license": "BSD-3-Clause",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-slots"
+      ],
+      "platform": "web"
+    }
+  },
+  "author": "shutongX",
+  "homepage": "https://github.com/shutongX/dsh-perf#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shutongX/dsh-perf.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shutongX/dsh-perf/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "performance",
+    "profiling",
+    "optimization",
+    "cordis"
+  ],
+  "engines": {
+    "dsh": ">=0.2.1-rc.1 <3"
+  },
+  "icon": "./icon.svg",
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  }
+}
