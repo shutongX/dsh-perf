@@ -4,6 +4,9 @@ Performance suite for DeepSeek Harness: measure per-plugin client cost, save and
 
 一体化的 DSH 性能套件：按插件采集耗时、保存/对比记录、生成给 agent 读的优化报告、按四象限推荐按需加载插件。
 
+
+> 如果你以前用开发目录装过旧的 `@dsh-external/<name>` 版本，先移除旧插件，再装这里的无 scope 包；否则同一功能会同时加载两份。
+
 ## 安装
 
 任选一种：
