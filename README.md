@@ -35,6 +35,8 @@ dsh plugin --profile desktop add https://github.com/shutongX/dsh-perf
 
 装完打开 DSH：右下角「性能」按钮，或 设置 →「性能套件」。
 
+「性能」按钮可以拖到屏幕任意位置，位置会记住；不需要它的时候，去 设置 →「性能套件」→ 运行时优化，把「显示性能悬浮按钮」关掉。
+
 ## 三个页签
 
 ### 采集

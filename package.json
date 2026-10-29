@@ -1,6 +1,6 @@
 {
   "name": "dsh-perf",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Performance suite for DeepSeek Harness: measure per-plugin client cost, save and compare runs, generate agent-readable optimization reports, and tune plugins with quadrant recommendations.",
   "private": false,
   "type": "module",
